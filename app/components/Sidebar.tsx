@@ -7,7 +7,12 @@ import {
   Facebook, Twitter, Instagram, ChevronDown 
 } from 'lucide-react';
 
-const Sidebar = () => {
+interface SidebarProps {
+  activeSection: string;
+  setActiveSection: (section: string) => void;
+}
+
+const Sidebar = ({ activeSection, setActiveSection }: SidebarProps) => {
   // State to handle the mobile dropdown toggle
   const [isOpen, setIsOpen] = useState(false);
 
