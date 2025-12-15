@@ -5,11 +5,6 @@ import Sidebar from "@/app/components/Sidebar";
 import MainContent from "@/app/components/MainContent";
 import TopNav from "./components/TopNav";
 
-interface SidebarProps {
-  activeSection: string;
-  setActiveSection: (section: string) => void;
-}
-
 export default function Home() {
   const [activeSection, setActiveSection] = useState("About");
 
@@ -18,7 +13,7 @@ export default function Home() {
       <div className="w-full max-w-7xl flex flex-col lg:flex-row gap-6">
         {/* LEFT SIDEBAR */}
         <div className="w-full lg:w-70 shrink-0">
-          <Sidebar activeSection={activeSection} setActiveSection={setActiveSection} />
+          <Sidebar />
         </div>
 
         {/* RIGHT CONTENT */}

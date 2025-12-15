@@ -1,3 +1,4 @@
+"use client"
 import About from "./sections/About";
 import Resume from "./sections/Resume";
 import Portfolio from "./sections/Portfolio";
