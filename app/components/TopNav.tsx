@@ -11,7 +11,7 @@ const TopNav = ({ activeTab, setActiveTab }: NavbarProps) => {
   return (
     <>
       {/* MOBILE NAVBAR (Fixed Bottom) */}
-      <nav className="lg:hidden fixed bottom-0 right-5.5 z-50 p-4 flex justify-center w-full">
+      <nav className="lg:hidden fixed bottom-0 right-0 z-50 p-4 flex justify-center w-full">
         <ul className="flex items-center justify-between gap-2 bg-[#2b2b2c]/90 backdrop-blur-md border border-[#383838] px-5 py-4 rounded-2xl shadow-2xl w-full max-w-sm">
           {navItems.map((item) => (
             <li key={item}>

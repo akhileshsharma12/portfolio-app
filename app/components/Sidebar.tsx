@@ -13,7 +13,7 @@ const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <aside className="w-full h-auto lg:w-70 bg-[#1e1e1f] border border-[#383838] rounded-3xl p-6 shadow-2xl z-10 lg:sticky lg:top-10 transition-all duration-300 ease-in-out">
+    <aside className="w-full h-auto lg:w-70 bg-[#1e1e1f] border border-[#383838] rounded-3xl p-3 lg:p-6 shadow-2xl z-10 lg:sticky lg:top-10 transition-all duration-300 ease-in-out">
       
       {/* --- HEADER SECTION --- */}
       {/* Mobile: Row Layout | Desktop: Column Layout */}
@@ -42,7 +42,7 @@ const Sidebar = () => {
         {/* Only visible on small screens (lg:hidden) */}
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className="absolute top-0 right-0 lg:hidden p-2 rounded-xl bg-[#2b2b2c] border border-[#383838] text-[#ffdb70] hover:bg-[#383838] transition-colors"
+          className="absolute top-5 right-0 lg:hidden p-2 rounded-xl bg-[#2b2b2c] border border-[#383838] text-[#ffdb70] hover:bg-[#383838] transition-colors"
         >
           <ChevronDown 
             size={20} 

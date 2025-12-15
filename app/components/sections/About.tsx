@@ -32,29 +32,16 @@ export default function About() {
   const testimonials = [
     {
       id: 1,
-      name: "Daniel Lewis",
-      text: "Richard was hired to create a corporate identity. We were very pleased with the work. He has a great eye for design.",
+      name: "Akash Pawar",
+      text: "Akhilesh was hired to create a corporate identity. We were very pleased with the work. He has a great eye for design.",
       avatar: "/testimonial/avatar-1.png", // Replace with your image path
     },
     {
       id: 2,
-      name: "Jessica Miller",
-      text: "Working with Richard was a pleasure. He understood our requirements perfectly and delivered an excellent website.",
+      name: "Rutik Tade",
+      text: "Working with Akhilesh was a pleasure. He understood our requirements perfectly and delivered an excellent website.",
       avatar: "/testimonial/avatar-2.png", // Replace with your image path
-    },
-    // Add more items to see the scrolling effect
-    {
-      id: 3,
-      name: "Emily Davis",
-      text: "Incredible work! The project was delivered on time and exceeded our expectations. Highly recommend his services.",
-      avatar: "/testimonial/avatar-4.png",
-    },
-    {
-      id: 4,
-      name: "Michael Brown",
-      text: "Professional, creative, and easy to work with. The new website design has already boosted our sales significantly.",
-      avatar: "/testimonial/avatar-2.png",
-    },
+    }
   ];
 
   return (
@@ -66,7 +53,7 @@ export default function About() {
 
       <section className="text-white/70 space-y-6 mt-8">
         <p>
-          I'm a <b className="text-white">Computer Science Student</b> and{" "}
+          I&apos;m a <b className="text-white">Computer Science Student</b> and{" "}
           <b className="text-white">Aspiring Web Developer</b> from{" "}
           <b className="text-white">Akola, Maharashtra</b>. I am passionate
           about coding and building modern web applications.
@@ -83,7 +70,7 @@ export default function About() {
       </section>
 
       <section className="mt-10">
-        <h3 className="text-2xl font-bold text-white mb-6">What I'm Doing</h3>
+        <h3 className="text-2xl font-bold text-white mb-6">What I&apos;m Doing</h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {services.map((service, index) => (
@@ -112,7 +99,7 @@ export default function About() {
       <h3 className="text-2xl font-bold text-white mb-6">Testimonials</h3>
 
       {/* Scrollable Container */}
-      <div className="grid grid-cols-2 gap-6  pb-6  scrollbar-gold">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6  pb-6  scrollbar-gold">
         {testimonials.map((item) => (
           <div 
             key={item.id}

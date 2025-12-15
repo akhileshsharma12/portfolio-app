@@ -9,7 +9,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState("About");
 
   return (
-    <main className="min-h-screen bg-[#121212] text-white py-6 px-10 flex justify-center pb-24 lg:pb-6">
+    <main className="min-h-screen bg-[#121212] text-white py-6 px-2 flex justify-center pb-24 lg:pb-6">
       <div className="w-full max-w-7xl flex flex-col lg:flex-row gap-6">
         {/* LEFT SIDEBAR */}
         <div className="w-full lg:w-70 shrink-0">

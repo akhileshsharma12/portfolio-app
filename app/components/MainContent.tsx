@@ -7,7 +7,7 @@ import Contact from "./sections/Contact";
 
 export default function MainContent({ active }: { active: string }) {
   return (
-    <div className="px-8">
+    <div className="px-5 lg:px=8">
       {active === "About" && <About />}
       {active === "Resume" && <Resume />}
       {active === "Portfolio" && <Portfolio />}
