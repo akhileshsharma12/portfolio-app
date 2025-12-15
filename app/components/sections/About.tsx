@@ -29,21 +29,6 @@ export default function About() {
     },
   ];
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "Akash Pawar",
-      text: "Akhilesh was hired to create a corporate identity. We were very pleased with the work. He has a great eye for design.",
-      avatar: "/testimonial/avatar-1.png", // Replace with your image path
-    },
-    {
-      id: 2,
-      name: "Rutik Tade",
-      text: "Working with Akhilesh was a pleasure. He understood our requirements perfectly and delivered an excellent website.",
-      avatar: "/testimonial/avatar-2.png", // Replace with your image path
-    }
-  ];
-
   return (
     <>
       <h1 className="text-3xl font-bold mb-4 relative">
@@ -95,43 +80,6 @@ export default function About() {
         </div>
       </section>
 
-     <section className="mt-10">
-      <h3 className="text-2xl font-bold text-white mb-6">Testimonials</h3>
-
-      {/* Scrollable Container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6  pb-6  scrollbar-gold">
-        {testimonials.map((item) => (
-          <div 
-            key={item.id}
-            className=" bg-[#272727] border border-[#383838] p-6 rounded-2xl shadow-sm flex flex-col sm:flex-row gap-4 snap-center relative top-0"
-          >
-            {/* Avatar */}
-            <div className="shrink-0">
-              <div className="w-16 h-16 rounded-2xl bg-[#383838] overflow-hidden relative">
-                <Image
-                  src={item.avatar}
-                  alt={item.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="flex-1">
-              <h4 className="text-lg font-bold text-white">{item.name}</h4>
-              {/* <p className="text-xs text-[#ffdb70] mb-2">{item.role}</p> */}
-              <p className="text-white/70 text-sm leading-relaxed mt-2">
-                {item.text}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Custom Scrollbar Styles */}
-     
-    </section>
     </>
   );
 }
